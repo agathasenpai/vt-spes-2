@@ -12,9 +12,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/spes/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/spes/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/app/PerformanceMode/PerformanceMode.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/PerformanceMode/PerformanceMode.apk \
-    vendor/xiaomi/spes/proprietary/system_ext/app/PowerSaveMode/PowerSaveMode.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/PowerSaveMode/PowerSaveMode.apk \
-    vendor/xiaomi/spes/proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/workloadclassifier/workloadclassifier.apk \
     vendor/xiaomi/spes/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/spes/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
     vendor/xiaomi/spes/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
@@ -166,7 +163,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
     vendor/xiaomi/spes/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/spes/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so \
-    vendor/xiaomi/spes/proprietary/vendor/app/pasrservice/pasrservice.apk:$(TARGET_COPY_OUT_VENDOR)/app/pasrservice/pasrservice.apk \
     vendor/xiaomi/spes/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/spes/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
     vendor/xiaomi/spes/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
@@ -1556,11 +1552,15 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
+    pasrservice \
     PowerOffAlarm \
     DeviceInfo \
     ImsRcsService \
+    PerformanceMode \
+    PowerSaveMode \
     QtiTelephonyService \
     uceShimService \
+    workloadclassifier \
     WfdService \
     dpmserviceapp \
     ims \
