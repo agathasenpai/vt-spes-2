@@ -1535,10 +1535,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0-impl.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so \
-    vendor/xiaomi/spes/proprietary/vendor/odm/etc/audio_policy_engine_configuration_mi.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/audio_policy_engine_configuration_mi.xml \
-    vendor/xiaomi/spes/proprietary/vendor/odm/etc/audio_policy_engine_default_stream_volumes_mi.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/audio_policy_engine_default_stream_volumes_mi.xml \
-    vendor/xiaomi/spes/proprietary/vendor/odm/etc/audio_policy_engine_product_strategies_mi.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/audio_policy_engine_product_strategies_mi.xml \
-    vendor/xiaomi/spes/proprietary/vendor/odm/etc/audio_policy_engine_stream_volumes_mi.xml:$(TARGET_COPY_OUT_VENDOR)/odm/etc/audio_policy_engine_stream_volumes_mi.xml \
+    vendor/xiaomi/spes/proprietary/odm/etc/audio_policy_engine_configuration_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_configuration_mi.xml \
+    vendor/xiaomi/spes/proprietary/odm/etc/audio_policy_engine_default_stream_volumes_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_default_stream_volumes_mi.xml \
+    vendor/xiaomi/spes/proprietary/odm/etc/audio_policy_engine_product_strategies_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_product_strategies_mi.xml \
+    vendor/xiaomi/spes/proprietary/odm/etc/audio_policy_engine_stream_volumes_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_stream_volumes_mi.xml \
     vendor/xiaomi/spes/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/xiaomi/spes/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/xiaomi/spes/proprietary/vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
