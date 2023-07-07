@@ -1568,6 +1568,8 @@ PRODUCT_PACKAGES += \
     TimeService \
     pasrservice \
     PowerOffAlarm \
+    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     DeviceInfo \
     ImsRcsService \
     PerformanceMode \
