@@ -11,7 +11,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/etc/permissions/com.qualcomm.qti.UxPerformance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.UxPerformance.xml \
     vendor/xiaomi/spes/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/spes/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/spes/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
     vendor/xiaomi/spes/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/spes/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
     vendor/xiaomi/spes/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
@@ -40,22 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/xiaomi/spes/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/xiaomi/spes/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/audiosphere.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-common.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.ims.factory-V1.0-java.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.ims.factory-V1.1-java.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.ims.factory-V2.0-java.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.ims.rcssip-V1.0-java.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.ims.rcssip-V1.1-java.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.ims.rcssip-V1.2-java.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.ims.rcsuce-V1.0-java.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.ims.rcsuce-V1.1-java.jar \
-    vendor/xiaomi/spes/proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.ims.rcsuce-V1.2-java.jar \
     vendor/xiaomi/spes/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/spes/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/spes/proprietary/system_ext/lib/libbeluga.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libbeluga.so \
@@ -795,13 +778,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfioctl.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowercore.so \
+    vendor/xiaomi/spes/proprietary/vendor/lib/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-3.9.1.so \
+    vendor/xiaomi/spes/proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-3.9.1.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
-    vendor/xiaomi/spes/proprietary/vendor/lib/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full-3.9.1.so \
-    vendor/xiaomi/spes/proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite-3.9.1.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
     vendor/xiaomi/spes/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
@@ -1207,8 +1190,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgo.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
-    vendor/xiaomi/spes/proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-3.9.1.so \
-    vendor/xiaomi/spes/proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-3.9.1.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libcamxifestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxifestriping.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libcamximageformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamximageformatutils.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libcamxncs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxncs.so \
@@ -1326,6 +1307,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libpowercallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercallback.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercore.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libprekill.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprekill.so \
+    vendor/xiaomi/spes/proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-3.9.1.so \
+    vendor/xiaomi/spes/proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-3.9.1.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/xiaomi/spes/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
@@ -1575,13 +1558,13 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     pasrservice \
+    PowerOffAlarm \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     DeviceInfo \
     ImsRcsService \
     PerformanceMode \
     PowerSaveMode \
-    PowerOffAlarm \
     QtiTelephonyService \
     uceShimService \
     workloadclassifier \
@@ -1593,6 +1576,23 @@ PRODUCT_PACKAGES += \
     QXPerformance \
     UxPerformance \
     WfdCommon \
+    tcmclient \
+    audiosphere \
+    com.android.hotwordenrollment.common.util \
+    com.qti.dpmframework \
+    dpmapi \
+    qcrilhook \
+    qti-telephony-common \
+    vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.ims.factory-V1.0-java \
+    vendor.qti.ims.factory-V1.1-java \
+    vendor.qti.ims.factory-V2.0-java \
+    vendor.qti.ims.rcssip-V1.0-java \
+    vendor.qti.ims.rcssip-V1.1-java \
+    vendor.qti.ims.rcssip-V1.2-java \
+    vendor.qti.ims.rcsuce-V1.0-java \
+    vendor.qti.ims.rcsuce-V1.1-java \
+    vendor.qti.ims.rcsuce-V1.2-java \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.keymaster@4.1-service-default-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
